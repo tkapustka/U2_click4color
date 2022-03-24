@@ -1,4 +1,29 @@
-/* .colorBG {
-    width: 100%;
-    height: 250px;
-} */
+body {
+    background-color: gray;
+}
+.imageBody {
+    display: flex;
+
+}
+.colorImageCenter {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.colorTextGroup {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.colorText {
+    font-family: roboto;
+    color: white;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.clickText {
+    display: flex;
+    justify-content: center;
+}

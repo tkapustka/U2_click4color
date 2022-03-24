@@ -1,5 +1,16 @@
 
-const button = document.getElementById('color')
+
+// window.onload = function firstColor() {
+//     let colorAppearHex = response.data.hex
+//     axios.get('https://x-colors.herokuapp.com/api/random')
+//     document.body.style.background = colorAppearHex
+// }
+    
+
+
+
+
+const button = document.getElementById('colorImage')
 // const colorHex = document.querySelector('colorText')
 const colorHex = document.querySelector('colorText')
 

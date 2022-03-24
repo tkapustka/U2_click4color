@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>API</title>
 </head>
 <body>
+    <div class="imageBody">
+        <img id="colorImage" src="images/html/main-image.png" alt="color-BG" class="colorImageCenter">
+    </div>
+ <!-- <button id="color">Color</button> -->
+    <div class="colorTextGroup">
+        <p id="colorTextHex" class="colorText"></p>
+        <p id="colorTextRgb" class="colorText"></p>
+        <p id="colorTextHsl" class="colorText"></p>
+    </div>
+    <div class="clickText">
+        <p class="colorText">click for a new color</p>
+    </div>
 
-    <button id="color">Color</button>
-    <div>
-        <p id="colorTextHex">Test</p>
-    </div>
-    <div>
-        <p id="colorTextRgb">Test</p>
-    </div>
-    <div>
-        <p id="colorTextHsl">Test</p>
-    </div>
+
 </body>
 </html>
