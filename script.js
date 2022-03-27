@@ -23,7 +23,6 @@ button.addEventListener(`click`, async () => {
     let colorAppearHsl = response.data.hsl
     console.log(colorAppearHex)
     document.body.style.background = colorAppearHex
-    // colorHex.innerText(colorAppear)
     document.getElementById('colorTextHex').innerText = colorAppearHex
     document.getElementById('colorTextRgb').innerText = colorAppearRgb
     document.getElementById('colorTextHsl').innerText = colorAppearHsl
