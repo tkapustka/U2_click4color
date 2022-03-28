@@ -1,5 +1,3 @@
-
-
 // window.onload = function firstColor() {
 //     let colorAppearHex = response.data.hex
 //     axios.get('https://x-colors.herokuapp.com/api/random')
@@ -11,9 +9,7 @@
 
 
 const button = document.getElementById('colorImage')
-// const colorHex = document.querySelector('colorText')
 const colorHex = document.querySelector('colorText')
-
 
 
 button.addEventListener(`click`, async () => {
@@ -29,14 +25,15 @@ button.addEventListener(`click`, async () => {
     document.getElementById('colorTextHsl').innerText = colorAppearHsl
 })
 
-const type = document.getElementById('headline-color')
+// const type = document.getElementById('headline-color')
 
-type.addEventListener(`click`, async () => {
-    let response = await axios.get('https://x-colors.herokuapp.com/api/random')
-    console.log("hello")
-    document.body.style.background = colorAppearHex
-    document.getElementById("headline-color").style.color = colorAppearHex
-})
+// type.addEventListener(`click`, async () => {
+//     let response = await axios.get('https://x-colors.herokuapp.com/api/random')
+//     console.log(response)
+//     let colorAppearHex = response.data.hex
+//     document.body.style.background = colorAppearHex
+//     document.getElementById("headline-color").style.color = colorAppearHex
+// })
 
-// QUESTION - why get error on page two when first button is on page but not when not
+// QUESTION - error message button already declared on line 1?
 
