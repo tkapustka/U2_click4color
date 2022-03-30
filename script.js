@@ -1,39 +1,13 @@
-// window.onload = function firstColor() {
-//     let colorAppearHex = response.data.hex
-//     axios.get('https://x-colors.herokuapp.com/api/random')
-//     document.body.style.background = colorAppearHex
-// }
-    
+const color = document.querySelector('#colorImage')
+const colorHex = document.querySelector('.colorText')
 
 
-
-
-const button = document.getElementById('colorImage')
-const colorHex = document.querySelector('colorText')
-
-
-button.addEventListener(`click`, async () => {
-    let response = await axios.get('https://x-colors.herokuapp.com/api/random')
-    console.log(response)
-    let colorAppearHex = response.data.hex
-    let colorAppearRgb = response.data.rgb
-    let colorAppearHsl = response.data.hsl
-    console.log(colorAppearHex)
-    document.body.style.background = colorAppearHex
-    document.getElementById('colorTextHex').innerText = colorAppearHex
-    document.getElementById('colorTextRgb').innerText = colorAppearRgb
-    document.getElementById('colorTextHsl').innerText = colorAppearHsl
+color.addEventListener(`click`, async () => {
+    // let response = await axios.get('https://x-colors.herokuapp.com/api/random')
+    let response = await axios.get('https://www.colr.org/json/color/random')
+    let colorAppearHex = response.data.new_color
+    let hex = colorAppearHex.replace(/^|,\s*/g, "$&#")
+    document.body.style.background = hex
+    document.querySelector('#colorTextHex').innerText = hex
+    console.log(hex)
 })
-
-// const type = document.getElementById('headline-color')
-
-// type.addEventListener(`click`, async () => {
-//     let response = await axios.get('https://x-colors.herokuapp.com/api/random')
-//     console.log(response)
-//     let colorAppearHex = response.data.hex
-//     document.body.style.background = colorAppearHex
-//     document.getElementById("headline-color").style.color = colorAppearHex
-// })
-
-// QUESTION - error message button already declared on line 1?
-
